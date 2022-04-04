@@ -1,12 +1,12 @@
 public class Rectangle extends Figure
 {
  private Point upperLeft;
- private Point upperRight;
+ private Point bottomRight;
 
  public Rectangle(Point p1, Point p2)
  {
   this.upperLeft = p1;
-  this.upperRight = p2;
+  this.bottomRight = p2;
  }
 
  @Override
@@ -18,6 +18,6 @@ public class Rectangle extends Figure
  @Override
  public double perimeter()
  {
-  return 0;
+  return Math.abs (upperLeft.getY ()- bottomRight.getY ())*2+Math.abs (upperLeft.getX ())- bottomRight.getX ()*2;
  }
 }
