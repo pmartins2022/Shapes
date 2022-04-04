@@ -19,6 +19,6 @@ public class Rectangle extends Figure
  @Override
  public double perimeter()
  {
-  return Math.abs (upperLeft.getY ()- bottomRight.getY ())*2+Math.abs (upperLeft.getX ())- bottomRight.getX ()*2;
+  return Math.abs (upperLeft.getY ()- bottomRight.getY ())*2+Math.abs (upperLeft.getX ()- bottomRight.getX ())*2;
  }
 }
