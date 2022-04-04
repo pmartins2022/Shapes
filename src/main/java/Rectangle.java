@@ -13,7 +13,7 @@ public class Rectangle extends Figure
  public double area()
  {
 
-  return Math.abs(bottomRight.getX()- upperLeft.getX()) * Math.abs(bottomRight.getY())- upperLeft.getX();
+  return Math.abs(bottomRight.getX()- upperLeft.getX()) * Math.abs(bottomRight.getY()- upperLeft.getY());
  }
 
  @Override
