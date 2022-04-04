@@ -1,18 +1,19 @@
 public class Rectangle extends Figure
 {
  private Point upperLeft;
- private Point upperRight;
+ private Point bottomRight;
 
  public Rectangle(Point p1, Point p2)
  {
   this.upperLeft = p1;
-  this.upperRight = p2;
+  this.bottomRight = p2;
  }
 
  @Override
  public double area()
  {
-  return 0;
+
+  return Math.abs(bottomRight.getX()- upperLeft.getX()) * Math.abs(bottomRight.getY())- upperLeft.getX();
  }
 
  @Override
