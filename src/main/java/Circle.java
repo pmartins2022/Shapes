@@ -1,4 +1,4 @@
-public class Circle
+public class Circle extends Figure
 {
     private Point center;
     private double radius;
@@ -22,5 +22,17 @@ public class Circle
     public void expand(double scaleFactor)
     {
         setRadius (getRadius ()*scaleFactor);
+    }
+
+    @Override
+    public double area()
+    {
+        return 0;
+    }
+
+    @Override
+    public double perimeter()
+    {
+        return 0;
     }
 }
