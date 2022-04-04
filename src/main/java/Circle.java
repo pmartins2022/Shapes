@@ -9,16 +9,6 @@ public class Circle
         this.radius = radius;
     }
 
-    public Point getCenter ()
-    {
-        return center;
-    }
-
-    public void setCenter (Point center)
-    {
-        this.center = center;
-    }
-
     public double getRadius ()
     {
         return radius;
